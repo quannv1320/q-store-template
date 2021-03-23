@@ -14230,10 +14230,19 @@ Components - Banner
 }
 
 .banner-text-large {
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 6px;
-  margin-bottom: 30px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 167%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
 }
 
 .banner-text-big {
@@ -14256,6 +14265,12 @@ Components - Banner
   color: #ea1c26 !important;
   border-bottom: 1px solid;
   font-weight: 500;
+  position: relative;
+  top: 70px;
+  left: 110px;
+  background: #ea1c26;
+  color: #FFF !important;
+  padding: 10px;
 }
 
 .banner-single:hover .banner-img {
